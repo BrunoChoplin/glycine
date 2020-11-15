@@ -1,0 +1,70 @@
+	* {
+		box-sizing: border-box;
+		margin:0;
+		padding:0;
+	}
+	body {
+		/* position:absolute; */
+		margin:0;
+		padding:0;
+		overflow:hidden;
+		background-color: #99e6ff;
+		background: url('../images/grand_ciel.jpg');
+	}
+	#cache {
+		display: none;
+	}
+	#ecran {
+		position: absolute;
+		perspective: 1500px;
+		perspective-origin: left center;
+	}
+	#glycine {
+		position: absolute;
+		transform-origin: left center;
+		transition-timing-function: ease-in-out;
+	}
+	#sol {
+		position: absolute;
+		/* transition-timing-function: ease-in; */
+	}
+	@keyframes balai {
+		from {left: 0px}
+		to {left: 2000px}
+	}
+	#mySvg {
+		position:absolute;
+	}
+	path {
+		transition-timing-function: ease-in-out;
+	}
+	div.corole {
+		position: absolute;
+		transition-timing-function: ease-in-out;
+	}
+	div.petale {
+		position: absolute;
+		width:70px;
+		height:50px;
+		margin-left: 0;
+		margin-top: -25px;
+		opacity: 0.8;
+		transform-origin: 0 50%;
+		transition-timing-function: ease-in-out;
+	}
+	div.feuille {
+		position: absolute;
+		width:80px;
+		height:34px;
+		margin-left: 0;
+		margin-top: 0;
+		transform-origin: 0 50%;
+		transition-timing-function: ease-in-out;
+	}
+	.envol {
+		transition-duration: 40ms;
+		transition-timing-function: ease-in-out;
+	}
+	.ausol {
+		transition-timing-function: ease-in;
+	}
